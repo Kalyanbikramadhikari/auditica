@@ -10,8 +10,11 @@ module.exports = {
         },
         secondary: {
           main: '#EE4950',
-          text: '#959D99'
+          text: '#959D99' 
         },
+        tertiary:{
+          // text:"#959D99"
+        }
       },
       fontFamily: {
         inter: ['"Inter"', 'sans-serif'],

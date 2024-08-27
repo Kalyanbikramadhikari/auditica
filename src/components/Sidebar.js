@@ -3,6 +3,8 @@ import HomeIcon from '@mui/icons-material/Home';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import HeadsetOutlinedIcon from '@mui/icons-material/HeadsetOutlined';
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import ControlPointRoundedIcon from '@mui/icons-material/ControlPointRounded';
 
 const Sidebar = () => {
 
@@ -26,13 +28,13 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className=' bg-primary-background h-lvh w-[15%] border-r-[1px] border-primary-text'>
+    <div className=' bg-primary-background h-lvh w-[15%] border-r-[1px] border-primary-text px-3 py-3'>
       <div className="flex flex-col">
-        <img src="/assets/images/logo.png" alt="" />
+        <img src="/images/logo.png" alt="" className='w-28' />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col mt-9 space-y-2">
         {sidebarData.map((item, index) => (
-          <div key={index} className="flex items-center space-x-4 p-3">
+          <div key={index} className={`flex items-center space-x-4 p-2 rounded-sm ${index===0?"bg-secondary-main":"hover:bg-secondary-main"} `}>
             <span className='flex text-white '>
               {item.icon}
 
@@ -43,10 +45,10 @@ const Sidebar = () => {
       </div>
 
       {/* third div of sidebar */}
-      <div className="flex flex-col">
+      <div className="flex flex-col px-2 space-y-3">
 
-        <div className="flex justify-between">
-          <div className="flex">
+        <div className="flex justify-between mt-8">
+          <div className="flex text-[#309dae] space-x-3">
             <span>
               <HomeIcon />
             </span>
@@ -54,26 +56,30 @@ const Sidebar = () => {
               Home
             </span>
           </div>
-          <div className="flex">
-            {/* add plus icon here */}
+          <div className="flex text-white">
+            <ControlPointRoundedIcon />
           </div>
 
         </div>
 
-        <div className="flex text-secondary-main space-x-2">
+        <div className="flex text-[#F3777D] space-x-2">
           <span className="">
             For workplace
           </span>
           <span>
-            {/* add bar icon here */}
+            <BarChartIcon />
           </span>
         </div>
+        <div className="text-secondary-text space-y-2">
+          <span className="flex text-[15px] font-inter">Rich Brian's collections</span>
+          <span className="flex text-[15px] font-inter">deep focus</span>
+          <span className="flex text-[15px] font-inter">Lo-Fi Jazz upbeat</span>
+          <span className="flex text-[15px] font-inter">For workplace</span>
+          <span className="flex text-[15px] font-inter">Christmas playlist</span>
+        </div>
 
-        <span className="flex">Rich Brian's collections</span>
-        <span className="flex">deep focus</span>
-        <span className="flex">Lo-Fi Jazz upbeat</span>
-        <span className="flex">For workplace</span>
-        <span className="flex">Christmas playlist</span>
+
+
       </div>
     </div>
   );
