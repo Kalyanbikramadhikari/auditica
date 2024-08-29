@@ -1,0 +1,15 @@
+.scrollable-container {
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+  
+  .scrollable-container::-webkit-scrollbar { 
+    display: none;  /* WebKit */
+  }
+  
+  .scrollable-container > div {
+    display: inline-flex;
+    padding-bottom: 10px; /* To account for hidden scrollbar */
+  }
