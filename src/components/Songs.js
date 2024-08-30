@@ -5,7 +5,7 @@ const Songs = ({ src, title, description }) => {
         <div className='space-y-2 w-[162px] '>
             <img src={src} alt="" className='' />
 
-            <div className="flex flex-col font-inter"><span className='text-white text-sm font-semibold'>{title}</span><span className='text-slate-100 text-sm font-inter'>{description}</span></div>
+            <div className="flex flex-col font-inter"><span className='text-[#E4E7E5] text-sm font-semibold'>{title}</span><span className='text-[#AFB6B2] text-sm font-inter'>{description}</span></div>
         </div>
     )
 }

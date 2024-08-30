@@ -5,7 +5,7 @@ import '../App.css'
 
 const NewReleases = () => {
     return (
-        <div className='mt-12'>
+        <div className='mt-6'>
             {/* title */}
             <div className="flex  justify-between ">
                 <div className="flex gap-x-4">

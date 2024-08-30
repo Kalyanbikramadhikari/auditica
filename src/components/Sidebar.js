@@ -28,13 +28,13 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className=' bg-primary-background h-lvh w-[15%] border-r-[1px] border-primary-text px-3 py-3'>
+    <div className=' bg-primary-background h-lvh w-[15%] border-r-[1px] border-primary-text px-3 py-3 fixed top-0'>
       <div className="flex flex-col">
         <img src="/images/logo.png" alt="" className='w-28' />
       </div>
       <div className="flex flex-col mt-9 space-y-2">
         {sidebarData.map((item, index) => (
-          <div key={index} className={`flex items-center space-x-4 p-2 rounded-sm ${index===0?"bg-secondary-main":"hover:bg-secondary-main"} `}>
+          <div key={index} className={`flex items-center space-x-4 p-2 rounded-sm ${index === 0 ? "bg-secondary-main" : "hover:bg-secondary-main"} `}>
             <span className='flex text-white '>
               {item.icon}
 
