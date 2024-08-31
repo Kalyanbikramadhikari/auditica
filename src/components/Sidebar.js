@@ -28,7 +28,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className=' bg-primary-background h-lvh w-[15%] border-r-[1px] border-primary-text px-3 py-3 fixed top-0'>
+    <div className=' bg-primary-background h-lvh w-[15%] border-r-[1px] border-primary-text px-3 py-3 fixed top-0 left-0 z-10'>
       <div className="flex flex-col">
         <img src="/images/logo.png" alt="" className='w-28' />
       </div>

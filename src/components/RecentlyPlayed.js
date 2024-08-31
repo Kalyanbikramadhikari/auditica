@@ -4,6 +4,7 @@ import PauseIcon from '@mui/icons-material/Pause';
 import RecentSongs from './RecentSongs';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import DragHandleIcon from '@mui/icons-material/DragHandle';
+import PauseCircleOutlineOutlinedIcon from '@mui/icons-material/PauseCircleOutlineOutlined';
 const RecentlyPlayed = () => {
     return (
         <div className='mt-6'>
@@ -25,7 +26,7 @@ const RecentlyPlayed = () => {
 
             <div className="flex flex-col text-[#AFB6B2] font-inter gap-4">
                 <RecentSongs index="1" src="images/alliwant.png" singer="Maria Carey" album="Album" title="All I Want For Christmas Is You" time="3:54" iconone={<FavoriteBorderIcon/>} icontwo={<DragHandleIcon/>}/>
-                <RecentSongs index="1" src="images/ontheground.png" singer="Rose" album="-R-" title="On the ground" time="3:54" iconone={<FavoriteBorderIcon/>} icontwo={<DragHandleIcon/>}/>
+                <RecentSongs index=<PauseCircleOutlineOutlinedIcon style={{fontSize:'16px', color:'#EE4950'}}/> src="images/ontheground.png" singer="Rose" album="-R-" title="On the ground" time="3:54" iconone={<FavoriteBorderIcon/>} icontwo={<DragHandleIcon/>}/>
 
                 <RecentSongs index="2" src="images/donda.png" singer="Kanye West" album="Donda" title="Donda" time="3:54" iconone={<FavoriteBorderIcon/>} icontwo={<DragHandleIcon/>}/>
 

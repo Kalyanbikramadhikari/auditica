@@ -5,7 +5,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 const MainBox = () => {
     return (
-        <div className=''>
+        <div className='ml-[260px]'>
 
 
             {/* for banner images */}
