@@ -7,17 +7,17 @@ import DragHandleIcon from '@mui/icons-material/DragHandle';
 import PauseCircleOutlineOutlinedIcon from '@mui/icons-material/PauseCircleOutlineOutlined';
 const RecentlyPlayed = () => {
     return (
-        <div className='mt-6'>
+        <div className='mt-6 mb-16'>
             {/* title */}
             <div className="flex  justify-between ">
                 <div className="flex gap-x-4">
-                    <span className="text-[26px] font-semibold text-white font-inter">Recently Played</span>
-                    <div className="rounded-full h-8 w-8 flex items-center justify-center bg-secondary-main mt-1">
-                        <PauseIcon style={{fontSize:'23px'}} />
+                    <span className="text-[22px] font-semibold text-white font-inter">Recently Played</span>
+                    <div className="rounded-full h-6 w-6 flex items-center justify-center bg-secondary-main mt-1">
+                        <PauseIcon style={{fontSize:'17px'}} />
                     </div>
                 </div>
 
-                <div className="flex text-secondary-main font-inter font-semibold ">See more</div>
+                <div className="flex text-secondary-main font-inter font-medium ">See more</div>
 
             </div>
 

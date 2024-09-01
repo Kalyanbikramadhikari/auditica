@@ -9,13 +9,13 @@ const NewReleases = () => {
             {/* title */}
             <div className="flex  justify-between ">
                 <div className="flex gap-x-4">
-                    <span className="text-[26px] font-semibold text-white font-inter">New Releases</span>
-                    <div className="rounded-full h-8 w-8 flex items-center justify-center bg-secondary-main mt-1">
-                        <PlayArrowIcon />
+                    <span className="text-[22px] font-semibold text-white font-inter">New Releases</span>
+                    <div className="rounded-full h-6 w-6 flex items-center justify-center bg-secondary-main mt-1">
+                        <PlayArrowIcon style={{fontSize:'20px'}} />
                     </div>
                 </div>
 
-                <div className="flex text-secondary-main font-inter font-semibold ">See more</div>
+                <div className="flex text-secondary-main font-inter font-medium ">See more</div>
 
             </div>
 

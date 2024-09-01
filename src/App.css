@@ -13,3 +13,22 @@
     display: inline-flex;
     padding-bottom: 10px; /* To account for hidden scrollbar */
   }
+
+
+
+  .vertical-scrollable-container {
+    height: 610px; /* Or whatever height you want */
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+  
+  .vertical-scrollable-container::-webkit-scrollbar { 
+    display: none;  /* WebKit */
+  }
+  
+  .vertical-scrollable-container > div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px; /* To account for hidden scrollbar */
+  }

@@ -7,11 +7,11 @@ const YouMayLike = () => {
             {/* title */}
             <div className="flex  justify-between ">
                 <div className="flex gap-x-4">
-                    <span className="text-[26px] font-semibold text-white font-inter">You May Like</span>
+                    <span className="text-[22px] font-semibold text-white font-inter">You May Like</span>
 
                 </div>
 
-                <div className="flex text-secondary-main font-inter font-semibold ">See more</div>
+                <div className="flex text-secondary-main font-inter font-medium ">See more</div>
 
             </div>
 
