@@ -10,26 +10,26 @@ import YouMayLike from './components/YouMayLike.js';
 
 function App() {
   return (
-    <div className="flex  bg-[#171717] ">
+    <div className="flex  bg-[#171717] w-lvw ">
       {/* <div className="flex space-x-8"> */}
 
-      <div className="flex z-20 fixed bottom-0 w-[100%]">
+      {/* <div className="flex z-20 fixed bottom-0 w-[100%]">
         <PlayingSong />
 
-      </div>
+      </div> */}
       <Sidebar />
-      <div className=" space-x-[260px] flex flex-col w-[75%] mt-4">
-        <MainBox />
+      <div className=" space-x-[260px] flex flex-col w-[75%] mt-4 bg-[#171717] h-[1200px] ">
+        {/* <MainBox />
         <NewReleases />
         <YouMayLike />
-        <RecentlyPlayed />
+        <RecentlyPlayed /> */}
 
       </div>
 
-      <div className="flex flex-col  w-full ml-[32px] mt-4 ">
+      {/* <div className="flex flex-col  w-full ml-[32px] mt-4 ">
         <TopStreams />
         <Categories />
-      </div>
+      </div> */}
 
 
 
